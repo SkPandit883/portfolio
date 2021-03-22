@@ -1,7 +1,7 @@
 
     const header=document.querySelector('.header');
     const mouseOver=()=>{
-        
+        console.log('enter');
         anime({
             targets:header,
             translateX: {
@@ -18,10 +18,13 @@
                 value: 250,
                 duration: 800
               },
+              
+              
             duration: 4000,
             easing: 'easeOutElastic(1, .8)',
             loop: true
           });
     }
-    header.addEventListener('mouseover',mouseOver);
+  //  header.addEventListener('mouseover',mouseOver);
+  mouseOver()
    
