@@ -1137,6 +1137,77 @@
     <script src="js/main.js"></script>
     <script src="anime.min.js"></script>
     <script src="script.js"></script>
+    <script>
+
+      const canvas = document.getElementById('canvas');
+      const context = canvas.getContext('2d');
+      
+      
+      class Circle {
+          constructor(title, x,y,r){
+              this.x =  x;
+              this.y = y;
+              this.r = r;
+              this.title = title;
+              this.dx = (Math.random() *2) + 1;
+              this.dx *= Math.floor((Math.random() *2) + 1) === 1 ? 1 : -1;
+              this.dy = (Math.random() *2) + 1;
+              this.dy *= Math.floor((Math.random() *2) + 1) === 1 ? 1 : -1;
+          }
+          
+           draw() {
+              context.beginPath();
+              context.fillStyle = 'black'
+              context.font = '20px roboto'
+              context.fillText(this.title, this.x, this.y);
+          }
+      
+          animate(){
+              this.x += .5 * this.dx;
+              this.y += .5 * this.dy;
+              if(this.x + this.r > canvas.width || this.x - this.r < 0) {
+                  this.dx = -this.dx;
+              }if(this.y + this.r > canvas.width || this.y - this.r < 0) {
+                  this.dy = -this.dy;
+              }
+              this.draw();
+          }
+      }
+      
+      const circle1 =  new Circle(100,100,30);
+      
+      let balls = [];
+      const titles = [
+          'Html',
+          'Css',
+          'Bootstrap',
+          'Php',
+          'Python',
+          'JavaScript',
+          'ReactNative',
+          'MySql',
+          'Sqlite3',
+          'C_plus_plus',
+          'C'
+      ]
+      for (let i = 0; i < titles.length;i++) {
+          let r =  20;
+          let x = Math.random() * (canvas.width - r * 2 ) + r;
+          let y = Math.random() * (canvas.height - r * 2 ) + r;
+          balls.push(new Circle(titles[i],x,y,r));
+          
+      }
+      
+      function update() {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+      
+          for (let i = 0; i < balls.length; i++) {
+              balls[i].animate();
+          }
+          requestAnimationFrame(update);
+      }
+      update();
+      </script>
   </body>
 
 <!-- Mirrored from lmpixels.com/demo/breezycv/darkfw/1/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Mar 2021 05:02:02 GMT -->
