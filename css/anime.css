@@ -1,16 +1,38 @@
 .main-container{
-  background-color: rgb(20, 20, 42);
-  width: 50%;
+  width: 100%;
+  height:550px;
   display: flex;
   flex-direction:column;
-  align-items:center;
   justify-content: center;
   color:white;
 }
 .inner-container{
     width: 100%;
+    height:33%;
     display: flex;
     flex-direction:row;
     align-items:center;
     justify-content:space-between;
+
+}
+.first-container{
+ height:33%;
+ display:flex;
+ flex-direction:row;
+ align-items:start;
+ justify-content:center;
+
+}
+.first-container-inner{
+
+}
+.forth-container{
+  height:33%;
+  display:flex;
+  flex-direction:row;
+  align-items:flex-end;
+  justify-content:center;
+}
+.forth-container-inner{
+
 }
