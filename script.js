@@ -104,6 +104,27 @@ anime({
 })
 anime({
   targets:'.bootstrap',
-  translateY: {function() { return anime.random(0, 200) + 'rem'; }},
+  translateY:{value:50, duration:10000},
+  translateX:{value:50, duration:100000},
+  rotate:{value:360,duration:3000},
+  scale:{value:-1,duration:5000},
+  scale:{value:-0.4,duration:5000},
+  translateX:{value:200, duration:5000},
+  translateY:{value:50, duration:5000},
+  rotate:{value:360,duration:10000},
+  rotate:{value:300, duration:3000},
+
+
   loop:true,
+})
+anime({
+  targets:'.python',
+  translateX:{value:200, duration:100000},
+  rotate:{value:360,delay:2000,duration:3000},
+  translateY:{value:200, duration:100000},
+  scale:{value:-1,delay:3000,duration:3000},
+  translateX:{value:200, duration:100000},
+  rotate:{value:300,delay:2000,duration:3000},
+  loop:true,
+
 })
