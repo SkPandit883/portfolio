@@ -33,8 +33,44 @@ anime({
 anime({
   targets:'.css',
   translateX:[{
-    value:-100,
+    value:-200,
     duration:2000,
+  },{
+    value:200,
+    duration:3000,
   }],
+
+  translateY:[{
+    value:400,
+    duration:3000
+  }],
+  scale:{
+    value:-2,
+    duration: 1600,
+    delay: 800,
+    easing: 'easeInOutQuart'
+  },
+  rotate:{
+    value:'+=2turn',
+    duration:5000
+    
+  },
+
   loop:true
+});
+anime({
+  
+  targets:'.react',
+  scale:{
+    value:-1,
+    duration: 1600,
+    delay: 800,
+    easing: 'easeInOutQuart'
+  },
+  rotate:{
+    value:'+=2turn',
+    duration:5000
+  },
+  loop:true
+
 })
