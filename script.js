@@ -74,3 +74,44 @@ anime({
   loop:true
 
 })
+anime({
+  targets:'.tailwind',
+  translateY:{
+    value:-250,
+    duration:10000
+  },
+  translateX:{
+    value:500,
+    duration:10000
+  },
+  translateY:{
+    value:-200,
+    duration:5000
+  },
+  translateY:{
+    value:-200,
+    duration:5000
+  },
+  rotate:{value:300, duration:3000},
+  translateY:{
+    value:-200,
+    duration:5000
+  },
+  rotate:{value:300, duration:3000},
+  
+  duration:300,
+  loop:true,
+})
+anime({
+  targets:'.bootstrap',
+  translateY:{value:50, duration:10000},
+  translateX:{value:50, duration:100000},
+  rotate:{value:360,duration:3000},
+  scale:{value:-1,duration:5000},
+  scale:{value:-0.4,duration:5000},
+  translateX:{value:200, duration:100000},
+  translateY:{value:50, duration:100000},
+  rotate:{value:360,duration:1000},
+
+  loop:true,
+})
