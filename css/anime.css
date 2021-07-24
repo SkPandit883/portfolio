@@ -24,6 +24,13 @@
  background-color: antiquewhite;
 
 }
+.second-container{
+  background-color: aqua;
+
+}
+.third-container{
+  background-color:yellow;
+}
 .first-container-inner{
 
 }
@@ -33,6 +40,7 @@
   flex-direction:row;
   align-items:flex-end;
   justify-content:center;
+  background-color:red
 }
 .forth-container-inner{
 

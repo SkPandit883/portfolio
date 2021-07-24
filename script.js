@@ -163,6 +163,16 @@ anime({
   loop:true
 })
 anime({
+  targets:'.second-container',
+  scale:{value:-0.4,duration:1000,delay:2000},
+  rotate:{
+    value:30,
+    duration:5000
+    
+  },
+  loop:true
+})
+anime({
   targets:'.php',
   rotate:{value:'+=1turn',duration:2000},
   translateY:{value:-200,duration:1000},
