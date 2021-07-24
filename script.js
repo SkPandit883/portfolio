@@ -137,8 +137,6 @@ anime({
     value:-200,
     duration:3000,
   }],
-
-
   scale:{
     value:-2,
     duration: 1600,
@@ -151,6 +149,24 @@ anime({
     
   },
 
+  loop:true,
+})
+anime({
+  targets:'.first-container',
+  scale:{value:-0.4,duration:3000,delay:2000},
+  rotate:{
+    value:360,
+    duration:5000
+    
+  },
+  translateY:{value:-200,duration:5000},
+  loop:true
+})
+anime({
+  targets:'.php',
+  rotate:{value:'+=1turn',duration:2000},
+  translateY:{value:-200,duration:1000},
+  translateX:{value:-200,duration:2000},
   loop:true,
 })
 console.log(Math.floor(Math.random()*100)-20);
