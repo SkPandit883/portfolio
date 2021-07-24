@@ -128,3 +128,29 @@ anime({
   loop:true,
 
 })
+anime({
+  targets:'.node',
+  translateX:[{
+    value:200,
+    duration:2000,
+  },{
+    value:-200,
+    duration:3000,
+  }],
+
+
+  scale:{
+    value:-2,
+    duration: 1600,
+    delay: 800,
+    easing: 'easeInOutQuart'
+  },
+  rotate:{
+    value:'+=2turn',
+    duration:5000
+    
+  },
+
+  loop:true,
+})
+console.log(Math.floor(Math.random()*100)-20);
