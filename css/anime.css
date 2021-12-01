@@ -21,26 +21,18 @@
  flex-direction:row;
  align-items:start;
  justify-content:center;
- background-color: antiquewhite;
 
 }
 .second-container{
-  background-color: aqua;
 
 }
 .third-container{
-  background-color:yellow;
 }
 .first-container-inner{
 
 }
 .forth-container{
-  height:33%;
-  display:flex;
-  flex-direction:row;
-  align-items:flex-end;
-  justify-content:center;
-  background-color:red
+
 }
 .forth-container-inner{
 
